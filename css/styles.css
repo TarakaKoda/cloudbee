@@ -1,5 +1,5 @@
-/* Typography */
-
+/* Typography
+========================================================================== */
 html {
     /* 62.5% of 16Px = 10px */
     font-size: 62.5%;
@@ -58,8 +58,8 @@ p {
         font-size: 2.4rem;
     }
 }
-
-/* Links */
+/* Links 
+========================================================================== */
 a {
     text-decoration: none;
 }
@@ -87,7 +87,8 @@ a {
     }
 }
 
-/* Badges */
+/* Badges
+========================================================================== */
 .badge {
     border-radius: 20px;
     color: #fff;
@@ -118,3 +119,33 @@ a {
         font-size: 1.2rem;
     }
 }
+
+/* Lists
+========================================================================== */
+.list {
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-headings)
+}
+
+.link--inline .list__items {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.list--tick {
+     list-style-image: url(../images/tick.svg);
+     padding-left: 3rem;    
+}
+
+.list--tick .list__items {
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+} 
+
+@media screen and (min-width: 1024px) {
+    .list--tick .list__items {
+        padding-left: 0;
+    }
+}
+
