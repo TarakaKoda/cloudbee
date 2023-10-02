@@ -342,12 +342,19 @@ a {
     color: #fff;
 }
 
+.card--primary .badge--primary {
+    background: #126de4;
+}
+
 .card--secondary .badge--secondary {
     background: #02cdf1;
 }
 
 /* Plans
    ========================================================================== */
+.plan {
+    transition: transform 0.2s ease-out;
+}
 
 .plan__name {
     color: #fff;
@@ -379,6 +386,10 @@ a {
     margin-bottom: 2rem;
 }
 
+.plan--popular {
+    transform: scale(1.1);
+}
+
 .plan--popular .card__header {
     position: relative;
 }
@@ -390,7 +401,14 @@ a {
     position: absolute;
     top: -6px;
     right: 5%;
-     
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan--popular:hover {
+    transform: scale(1.15);
 }
 
 @media screen and (min-width: 1024px) {
@@ -753,25 +771,36 @@ a {
 
 /* Block Domain
    ========================================================================== */
-.block--domain .input-group {
-    box-shadow: 0 0 30px 20px #e6ebee;
-    border: 0;
-    margin: 4rem auto;
-    max-width: 670px;
-}
-
-.block-domain__prices {
-    display: grid;
-    grid-template: repeat(2, 6rem) / repeat(3, 1fr);
-    font-size: 2rem;
-    font-weight: 600;
-    justify-items: center;
-    margin: 0 auto;
-    max-width: 700px;
-}
-
-@media screen and (min-width: 768px) {
+   .block--domain .input-group {
+       box-shadow: 0 0 30px 20px #e6ebee;
+       border: 0;
+       margin: 4rem auto;
+       max-width: 670px;
+    }
+    
+    .block-domain__prices {
+        display: grid;
+        grid-template: repeat(2, 6rem) / repeat(3, 1fr);
+        font-size: 2rem;
+        font-weight: 600;
+        justify-items: center;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+    
+    @media screen and (min-width: 768px) {
     .block-domain__prices {
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
+}
+
+/* Plans Block
+   ========================================================================== */
+.block-plans .grid {
+    gap: 8rem 4rem;
+}
+
+.block-plans .card {
+    max-width: 500px;
+    margin: 0 auto;
 }
