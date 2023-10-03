@@ -7,7 +7,7 @@
     --color-body-darker: #5c5577;
     --color-border: #ccc;
     --border-radius: 40px;
-} 
+}
 
 *,
 *::after,
@@ -211,7 +211,7 @@ a {
     font-weight: 600;
     margin: 1rem 0;
     outline: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -239,7 +239,7 @@ a {
 }
 
 .btn--secondary:hover {
-    background: #0eb0cc; 
+    background: #03cbef; 
 }
 
 .btn--accent {
@@ -304,6 +304,7 @@ a {
     border: 0;  
     flex-grow: 1;
     padding: 1.5rem 2 rem;
+    width: 0;
 }
 
 .input-group .btn {
@@ -584,6 +585,10 @@ a {
     font-size: 3rem;
 }
 
+.callout--signup {
+    transform: translateY(5rem);
+}
+
 .callout__text {
     font-size: 2.4rem;
 }
@@ -709,7 +714,7 @@ a {
 
 .nav__item > a {
     color: #d2d0db;
-    transition: all .3s;
+    transition: color .3s;
 }
 
 .nav__item > a:hover {
@@ -718,7 +723,7 @@ a {
 
 .nav__toggler {
     opacity: 0.5;
-    transition: all .15s;
+    transition: color .15s;
     cursor: pointer;
 }
 
@@ -785,8 +790,9 @@ a {
     }
     
     .block-domain__prices {
+        color: var(--color-headings);
         display: grid;
-        grid-template: repeat(2, 6rem) / repeat(3, 1fr);
+        grid-template: repeat(2, 6rem) / repeat(2, 1fr);
         font-size: 2rem;
         font-weight: 600;
         justify-items: center;
