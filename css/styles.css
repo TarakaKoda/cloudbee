@@ -486,7 +486,7 @@ a {
 .quote__company {
     font-style: normal;
     font-size: 2rem;
-    color: var(--color-secondary);
+    color: var(--color-headings);
     opacity: 40%;
 }
  
@@ -588,6 +588,10 @@ a {
     background-attachment: fixed;
     background-size: cover;
     color: #fff;
+}
+
+.callout--primary p {
+    opacity: 0.7;
 }
 
 .callout__heading {
